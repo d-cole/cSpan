@@ -1,0 +1,1 @@
+<class 'bs4.element.ResultSet'>
