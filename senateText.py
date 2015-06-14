@@ -83,5 +83,12 @@ if __name__ == "__main__":
     for i in range(0,len(all_tr)):
        writeTR(folder_dir + date_string,all_tr[i],i+1)
 
+    #Create *_speaker_times.txt
+    speaker_times = open(folder_dir + date_string + "_speaker_times.txt","w")
+    for i in range(0,len(all_tr)):
+        speaker_times.write(all_tr[i].getSpeaker() +": " + all_tr[i].getTime() + "\n")
+
+    speaker_times.close()
+
 
    
